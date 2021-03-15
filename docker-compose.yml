@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  bashnote:
+    build:
+      context: ./
+    container_name: bashnote
+    image: yaand/bashnote:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./work:/home/jovyan/work
